@@ -1,0 +1,24 @@
+{
+	"name": "ds_copy_source_last_2_days_files",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_source_target_1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "lab files",
+				"fileSystem": "b11gen2container"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": false,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
