@@ -1,0 +1,9 @@
+{
+	"name": "adf-b138-dev",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "069aed86-2839-4704-b8ac-35396d3d3f59",
+		"tenantId": "305c6689-cd3a-4ed3-a224-172423d435d2"
+	}
+}
