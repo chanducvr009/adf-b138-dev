@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-b138-dev"
+		},
+		"ls_source_sql_connectionString": {
+			"value": ""
+		},
+		"ls_source_target_1_accountKey": {
+			"value": ""
+		},
+		"ls_target_sql_connectionString": {
+			"value": ""
+		},
+		"ls_source_target_1_properties_typeProperties_url": {
+			"value": "https://adlsb111dev.dfs.core.windows.net/"
+		},
+		"Tumbling_window_trigger_properties_pipeline_parameters_startdate": {
+			"value": "@trigger().outputs.windowStartTime"
+		},
+		"Tumbling_window_trigger_properties_pipeline_parameters_enddate": {
+			"value": "@trigger().outputs.windowEndTime"
+		},
+		"event_trigger_properties_typeProperties_scope": {
+			"value": "/subscriptions/bd758504-1d07-435c-923e-a0d2f0f087ff/resourceGroups/rg-adf-b8/providers/Microsoft.Storage/storageAccounts/adlsb111dev"
+		}
+	}
+}
